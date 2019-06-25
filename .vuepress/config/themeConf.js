@@ -1,7 +1,7 @@
 const sidebar = require('./sidebar')
 
 module.exports = {
-  repo: 'yeyuanda/yeyuanda.github.io',
+  repo: 'yeyuanda/blog',
   navbar: true,
   editLinks: true,
   editLinkText: '在 GitHub 上编辑此页',
