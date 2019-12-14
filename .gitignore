@@ -1,0 +1,14 @@
+*/.DS_Store
+.DS_Store
+.cache
+.idea
+.git-credentials
+.tempdata
+node_modules/
+dist/
+mock/
+.prettierrc
+package-lock.json
+.vscode
+yarn.lock
+.history
