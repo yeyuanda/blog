@@ -15,34 +15,34 @@ module.exports = {
         "@vuepress/back-to-top",
         "@vuepress/active-header-links",
         // ["@vuepress/google-analytics", { ga: "UA-124601890-1" }],
-        // [
-        //     "@vuepress/pwa",
-        //     {
-        //         serviceWorker: true,
-        //         updatePopup: {
-        //             message: "发现页面有新内容",
-        //             buttonText: "刷新"
-        //         }
-        //     }
-        // ],
-        // [
-        //     "vuepress-plugin-comment",
-        //     {
-        //         choosen: "gitalk",
-        //         options: {
-        //             clientID: "6558fdf298fa596c5d8c",
-        //             clientSecret: process.env.clientSecret || "",
-        //             repo: "blog",
-        //             owner: "dongyuanxin",
-        //             admin: ["dongyuanxin"],
-        //             id: "<%- frontmatter.commentid || frontmatter.permalink %>", // Ensure uniqueness and length less than 50
-        //             distractionFreeMode: false, // Facebook-like distraction free mode
-        //             labels: ["Gitalk", "Comment"],
-        //             title: "「评论」<%- frontmatter.title %>",
-        //             body:
-        //                 "<%- frontmatter.title %>：<%- window.location.origin %><%- frontmatter.to.path || window.location.pathname %>"
-        //         }
-        //     }
-        // ]
+        [
+            "@vuepress/pwa",
+            {
+                serviceWorker: true,
+                updatePopup: {
+                    message: "发现页面有新内容",
+                    buttonText: "刷新"
+                }
+            }
+        ],
+        [
+            "vuepress-plugin-comment",
+            {
+                choosen: "gitalk",
+                options: {
+                    clientID: "9ec245bc0f06bddfdb3e",
+                    clientSecret: '0897b3baf3619a9cd6abefb6d5dcbecfe3a423d6',
+                    repo: "blog",
+                    owner: "yeyuanda",
+                    admin: ["yeyuanda"],
+                    id: "<%- frontmatter.commentid || frontmatter.permalink %>", // Ensure uniqueness and length less than 50
+                    distractionFreeMode: false, // Facebook-like distraction free mode
+                    labels: ["Gitalk", "Comment"],
+                    title: "「评论」<%- frontmatter.title %>",
+                    body:
+                        "<%- frontmatter.title %>：<%- window.location.origin %><%- frontmatter.to.path || window.location.pathname %>"
+                }
+            }
+        ]
     ]
 };
