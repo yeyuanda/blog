@@ -61,6 +61,7 @@ export default {
           const execs = re.exec(post.relativePath)
           return {
             ...post,
+            path: `/blog${post.path}`,
             updateTimestamp: (new Date(post.lastUpdated || post.frontmatter.date)).getTime(),
             filename: execs ? execs['1'] : '',
             formatDay: this.formatDate(new Date(post.lastUpdated || post.frontmatter.date))
